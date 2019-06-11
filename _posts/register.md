@@ -23,13 +23,10 @@ Set request header with { "Content-Type": "application/json" }
 
 ### Response
 
-Sends back a JWT token.
+Sends back a user id.
 
 ```
-	{
-		"jwt": str, // authentication token
-		"email": str,
-	}
+	{ userId: int }
 ```
 
 For errors responses, see the [response status codes documentation](#response-status-codes).
