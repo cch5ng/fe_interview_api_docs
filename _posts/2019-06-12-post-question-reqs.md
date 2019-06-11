@@ -18,7 +18,7 @@ This method allows users to save the number of questions by category to choose f
 
 * Authentication is required. The JWT token is sent in the request body.
 
-* For each question category, an integer shows the number of questions to generate in a new test.
+* For each question category, an integer value shows the number of questions to select (randomly) in a new test.
 
 ```
 {
@@ -39,13 +39,12 @@ This method allows users to save the number of questions by category to choose f
 
 ### Response
 
-Returns an array of arrays of question objects.
+Returns an array of arrays (of question objects).
 
 ```Status: 200 OK```
 ```
 [
-	[
-		{
+	[	{
 			"id": int,
 			"content": str,
 			"child_content": str or null,
@@ -55,8 +54,8 @@ Returns an array of arrays of question objects.
 		{},
 		{}
 	],
-	[{...}, {...}],
-	[{...}, {...}]
+	[],
+	[]
 ]
 ```
 
